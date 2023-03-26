@@ -1,0 +1,37 @@
+GET	localhost:8080/api/restaurants/findAllRestaurants
+
+GET	localhost:8080/api/restaurants/sortByPriceRange?minPrice=40&maxPrice=200
+
+GET	localhost:8080/api/restaurants/sortByRates?rates=6
+
+POST	localhost:8080/api/restaurants/addRestaurant
+
+Body
+raw (json)
+{
+    "restaurant": {
+        "name": "Hampton Street Vineyard",
+        "description": "Very Good",
+        "location": [
+            {
+                "street": "St. Sebastian's Road",
+                 "city": "Negombo",
+                 "country": "Sri Lanka"
+            }
+        ],
+        "rates": "6",
+        "price": "40",
+        "tables": [
+            {
+                "number": "1",
+                "capacity": "4",
+                "status": "Reserved"
+            },
+            {
+                "number": "2",
+                "capacity": "4",
+                "status": "Open"
+            }
+        ]
+    }
+}

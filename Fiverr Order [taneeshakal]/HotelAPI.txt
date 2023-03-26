@@ -1,0 +1,44 @@
+GET	localhost:8080/api/hotels/findAllHotels
+
+GET	localhost:8080/api/hotels/findHotelsByCity/kalutara
+
+GET	localhost:8080/api/hotels/sortByPriceRange?minPrice=50&maxPrice=600
+
+GET	localhost:8080/api/hotels/sortByRates?rates=7
+
+POST	localhost:8080/api/hotels/addHotel
+
+Body
+raw (json)
+{
+     "hotel": {
+         "name": "Avani Kalutara Resort",
+         "description": "Under an hour from Bandaranaike International Airport, and you’re on one of Sri Lanka’s most spectacular beaches. Nearby, there are temples, castles and fishing villages to wander and explore.",
+         "location": [
+             {
+                 "street": "St. Sebastian's Road",
+                 "city": "Negombo",
+                 "country": "Sri Lanka"
+             }
+         ],
+         "telephoneNo": "0112452185",
+         "rates": 7.8,
+         "photos": "null",
+         "rooms": [
+             {
+                 "roomType": "Luxury",
+                 "type": "Deluxe Double Room with View",
+                 "description": "Good",
+                 "price": "200",
+                 "specialFeatures": "null"
+             },
+             {
+                 "roomType": "Luxury",
+                 "type": "Deluxe Double Room with View",
+                 "description": "Very Good",
+                 "price": "250",
+                 "specialFeatures": "null"
+             }
+         ]
+     }
+}

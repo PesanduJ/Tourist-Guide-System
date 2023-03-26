@@ -1,0 +1,42 @@
+GET	localhost:8080/api/activities/getActivities
+
+GET	localhost:8080/api/activities/findActivitiesByCity/negombo
+
+GET	localhost:8080/api/activities/sortByPriceRange?minPrice=50&maxPrice=100
+
+GET	localhost:8080/api/activities/sortByRates?rates=3
+
+GET	localhost:8080/api/activities/sortByType?type=Adventure
+
+POST	localhost:8080/api/activities/addActivity
+
+Body
+raw (json)
+{
+    "activity": {
+        "name": "Cartagena ATV Tour",
+        "type": "Adventure",
+        "description": "The Cartagena ATV Tour is the best tour in Cartagena. Your bilingual guide will lead you through the Majestic North Zone along the beaches of Manzanillo del Mar, Playa de Oro and Villa Gloria The Cartagena ATV Tour is the best tour in Cartagena. Your bilingual guide will lead you through the Majestic North Zone along the beaches of Manzanillo del Mar, Playa de Oro and Villa Gloria The Cartagena ATV Tour is the best tour in Cartagena. Your bilingual guide will lead you through the Majestic North Zone along the beaches of Manzanillo del Mar, Playa de Oro and Villa Gloria The Cartagena ATV Tour is the best tour in Cartagena. Your bilingual guide will lead you through the Majestic North Zone along the beaches of Manzanillo del Mar, Playa de Oro and Villa Gloria",
+        "specialOffers": "null",
+        "price": "560",
+        "photos": "null",
+        "rates": "3",
+        "activityCenter": [
+            {
+                "name": "Cartagena ATV",
+                "location": [
+                    {
+                        "street": "St. Sebastian's Road",
+                        "city": "Negombo",
+                        "country": "Sri Lanka"
+                    }
+                ],
+                "telephoneNo": "0711264528",
+                "photos": "null"
+            }
+        ]
+    }
+}
+
+
+
